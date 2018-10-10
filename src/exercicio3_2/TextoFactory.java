@@ -2,15 +2,11 @@ package exercicio3_2;
 
 public class TextoFactory {
 	
-	public Texto criaTexto(TipoTexto tipo) {
-		switch (tipo) {
-		case CONFIDENCIAL:
+	public Texto criaTexto(String senha) {
+		if (senha.equals("designpatterns")) {
 			return new TextoConfidencial();
-		case PUBLICO:
-			return new TextoPublico();
-		default:
-			return null;
-		}
+		} 
+		else return new TextoPublico();
 	}
 
 }
