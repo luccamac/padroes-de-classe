@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class HelloWorldTxt extends HelloWorld {
+public class HelloWorldTxt implements HelloWorld {
 
 	@Override
 	public boolean getGreeting() {

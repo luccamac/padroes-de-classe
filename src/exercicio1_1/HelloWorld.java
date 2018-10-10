@@ -1,7 +1,7 @@
 package exercicio1_1;
 
-public abstract class HelloWorld {
+public interface HelloWorld {
 	
-	public abstract boolean getGreeting();
+	public boolean getGreeting();
 	
 }

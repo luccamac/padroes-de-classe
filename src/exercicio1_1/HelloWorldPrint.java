@@ -1,8 +1,7 @@
 package exercicio1_1;
 
-public class HelloWorldPrint extends HelloWorld {
+public class HelloWorldPrint implements HelloWorld {
 
-	@Override
 	public boolean getGreeting() {
 		try {
 			System.out.println("Hello, World!");
