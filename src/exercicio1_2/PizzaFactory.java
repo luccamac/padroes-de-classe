@@ -1,9 +1,6 @@
 package exercicio1_2;
 
 import org.joda.time.*;
-
-//DateTime dt = new DateTime("2004-12-13T21:39:45.618-08:00");
-
 public class PizzaFactory {
 	
 	public PizzaFactory() {
