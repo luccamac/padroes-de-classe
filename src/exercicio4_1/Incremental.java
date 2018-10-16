@@ -9,7 +9,7 @@ public class Incremental {
     
     @Override
 	public String toString() {
-		return "Incremental [numero=" + numero + "]";
+		return "Incremental -->" + numero + "]";
 	}
 
 	private Incremental(){
