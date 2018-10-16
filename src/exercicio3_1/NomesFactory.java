@@ -4,15 +4,15 @@ public class NomesFactory {
 	
 	private String nomeRecebido;
 	
-	public void escolheTipoNome() {
+	public String escolheTipoNome() {
 		if (nomeRecebido.contains(",")) {
 //			escolhe nomeExtenso
 			NomeExtenso extenso = new NomeExtenso();
-			extenso.processaNome(nomeRecebido);
+			return extenso.processaNome(nomeRecebido);
 		} 
 //			escolhe nomeSimples
 			NomeSimples simples = new NomeSimples();
-			simples.processaNome(nomeRecebido);
+			return simples.processaNome(nomeRecebido);
 	}
 
 	public NomesFactory(String nomeRecebido) {

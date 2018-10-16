@@ -2,7 +2,7 @@ package exercicio3_1;
 
 public class NomeSimples {
 	
-	public void processaNome(String nomeRecebido) {
+	public String processaNome (String nomeRecebido) {
 		int indexSeparacao = 0;
 		String nome = " ";
 		String sobrenome = " ";
@@ -11,6 +11,7 @@ public class NomeSimples {
 			if (nomeRecebido.charAt(i) == ' ') {
 				indexSeparacao = i;
 			}
+		}
 		
 		nome = nome.replaceAll("\\s","");
 		sobrenome = sobrenome.replaceAll("\\s","");
@@ -19,10 +20,9 @@ public class NomeSimples {
 		sobrenome = nomeRecebido.substring(indexSeparacao+1, nomeRecebido.length());
 		
 		Nome objNome = new Nome(nome, sobrenome);
-		System.out.println(objNome);
-		
-		}
+		return objNome.toString();
 		
 	}
-
+		
 }
+
